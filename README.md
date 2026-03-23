@@ -124,7 +124,7 @@ To get this information, look at the PCB kcad files and follow the traces from k
 
 ## Creating Graphical Key Maps
 
-This repo uses the excellent work of caksoylar's [Keymap Drawer](https://keymap-drawer.streamlit.app/) to automatically generate a key mapping of each layer when the Github Actions are run.
+This repo uses the excellent work of caksoylar's [Keymap Drawer](https://keymap-drawer.streamlit.app/) to automatically generate a key mapping of each layer when the Github Actions are run
 
 ## Upcoming ZMK Features
 
