@@ -151,12 +151,12 @@
         };
 
         Right-Inner-Top {
-            bindings = <&kp DE_RIGHT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
         };
 
         Right-Inner-Mid {
-            bindings = <&kp DE_RIGHT_BRACE>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
         };
 
@@ -171,12 +171,12 @@
         };
 
         Left-Inner-Bottom {
-            bindings = <&kp DE_SLASH>;
+            bindings = <&kp SLASH>;
             key-positions = <40 41>;
         };
 
         Right-Inner-Bottom {
-            bindings = <&kp DE_BACKSLASH>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <42 43>;
         };
     };
