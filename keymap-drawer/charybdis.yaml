@@ -12,51 +12,51 @@ layers:
   - '8'
   - '9'
   - '0'
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE)))
+  - BACK SPACE
   - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
-  - U
-  - I
-  - O
+  - ''''
+  - ','
+  - .
   - P
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
+  - Y
+  - F
+  - G
+  - C
+  - R
+  - L
+  - '='
   - DELETE
   - {t: A, h: LEFT CONTROL}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT GUI}
-  - {t: F, h: LEFT SHIFT}
-  - G
-  - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RIGHT GUI}
-  - {t: L, h: RIGHT ALT}
-  - '&hmr RIGHT_CONTROL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON))'
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
-  - LEFT SHIFT
-  - '&lt 9 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))'
+  - {t: O, h: LEFT ALT}
+  - {t: E, h: LEFT GUI}
+  - {t: U, h: LEFT SHIFT}
+  - I
+  - D
+  - {t: H, h: RIGHT SHIFT}
+  - {t: T, h: RIGHT GUI}
+  - {t: N, h: RIGHT ALT}
+  - {t: S, h: RIGHT CONTROL}
+  - '-'
+  - {t: (, h: LEFT SHIFT}
+  - {t: ;, h: SCROLL}
+  - Q
+  - J
+  - K
   - X
-  - C
-  - V
   - B
-  - N
   - M
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN))
-  - '&lt 9 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
-  - RSHIFT
+  - W
+  - V
+  - {t: Z, h: SCROLL}
+  - {t: ), h: RSHIFT}
   - {t: TAB, h: NUMBERS}
-  - SPACE
+  - DELETE
   - {t: LEFT GUI, h: NAV-FUN}
-  - {t: ENTER, h: NUMBERS}
+  - {t: Gui+ S, h: AGr+Gui+ S}
+  - SPACE
   - BACK SPACE
-  - R CLK
-  - L CLK
-  - NAV-FUN
+  - {t: LEFT GUI, h: NAV-FUN}
+  - ENTER
   NUMBERS:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -107,7 +107,7 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN))
   - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
   - {type: held}
-  - BACK SPACE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))
@@ -154,9 +154,9 @@ layers:
   - {t: ▽, type: trans}
   - END
   - PAGE DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UNDO
+  - COPY
+  - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -551,7 +551,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -713,3 +713,11 @@ combos:
   k: M CLK
 - p: [24, 25]
   k: CAPSLOCK
+- p: [18, 19]
+  k: NUBS
+- p: [30, 31]
+  k: ']'
+- p: [16, 17]
+  k: '['
+- p: [28, 29]
+  k: '{'

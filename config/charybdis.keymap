@@ -149,6 +149,26 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <24 25>;
         };
+
+        Right-Inner-Top {
+            bindings = <&kp NUBS>;
+            key-positions = <18 19>;
+        };
+
+        Right-Inner-Mid {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <30 31>;
+        };
+
+        Left-Inner-Top {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <16 17>;
+        };
+
+        Left-Inner-Mid {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <28 29>;
+        };
     };
 
     behaviors {
@@ -184,12 +204,12 @@
 
         default_win_layer {
             bindings = <
-&kp ESCAPE      &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6       &kp N7              &kp N8            &kp N9            &kp N0                          &kp DE_SQT
-&kp TAB         &kp Q                &kp W            &kp E            &kp R              &kp T             &kp DE_Z     &kp U               &kp I             &kp O             &kp P                           &kp DE_U_UMLAUT
-&kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G             &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LEFT_SHIFT  &lt 9 DE_Y           &kp X            &kp C            &kp V              &kp B             &kp N        &kp M               &kp DE_COMMA      &kp DE_PERIOD     &lt 9 DE_MINUS                  &kp RSHIFT
-                                                      &lt 1 TAB        &kp SPACE          &lt 2 LEFT_GUI    &lt 1 ENTER  &kp BACKSPACE
-                                                                       &mkp RCLK          &mkp LCLK         &mo 2
+&kp ESCAPE                        &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6                &kp N7              &kp N8            &kp N9            &kp N0                &kp BACKSPACE
+&kp TAB                           &kp APOS             &kp COMMA        &kp DOT          &kp P              &kp Y             &kp F                 &kp G               &kp C             &kp R             &kp L                 &kp EQUAL
+&kp DELETE                        &hml LEFT_CONTROL A  &hml LEFT_ALT O  &hml LEFT_GUI E  &hml LEFT_SHIFT U  &kp I             &kp D                 &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr RIGHT_ALT N  &hmr RIGHT_CONTROL S  &kp MINUS
+&hml LEFT_SHIFT LEFT_PARENTHESIS  &lt 9 SEMI           &kp Q            &kp J            &kp K              &kp X             &kp B                 &kp M               &kp W             &kp V             &lt 9 Z               &hml RSHIFT RIGHT_PARENTHESIS
+                                                                        &lt 1 TAB        &kp DELETE         &lt 2 LEFT_GUI    &hmr RA(RG(S)) RG(S)  &kp SPACE
+                                                                                         &kp BACKSPACE      &lt 2 LEFT_GUI    &kp ENTER
             >;
 
             label = "QUERTZ";
@@ -201,7 +221,7 @@
 &kp DE_SECTION                &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES        &hml DE_HASH DE_ASTERISK            &hml DE_CENT DE_C_CEDILLA             &kp DE_PERCENT    &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7     &hmr DE_LEFT_PARENTHESIS DE_N8  &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
 &hml DE_POUND_SIGN DE_DOLLAR  &hml LEFT_CONTROL N1  &hml LEFT_ALT DE_LESS_THAN  &hml LEFT_GUI DE_EQUAL              &hml LEFT_SHIFT DE_GREATER_THAN       &kp DE_TILDE      &kp DE_PLUS          &hmr RIGHT_SHIFT DE_N4  &hmr RIGHT_GUI DE_N5            &hmr RIGHT_ALT DE_N6             &hmr RIGHT_CONTROL ENTER       &hmr DE_BROKEN_BAR DE_PIPE
 &kp DE_CARET                  &trans                &kp DE_AT                   &hml DE_LEFT_BRACKET DE_LEFT_BRACE  &hml DE_RIGHT_BRACKET DE_RIGHT_BRACE  &kp DE_UMLAUT     &kp DE_MINUS         &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp DE_PERIOD                  &kp DE_BACKSLASH
-                                                                                &trans                              &kp BACKSPACE                         &trans            &trans               &kp DE_N0
+                                                                                &trans                              &trans                                &trans            &trans               &kp DE_N0
                                                                                                                     &trans                                &trans            &trans
             >;
 
@@ -210,12 +230,12 @@
 
         win_lower_layer {
             bindings = <
-&trans      &trans    &trans         &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
-&kp ESCAPE  &kt F1    &kp F2         &kp F3          &kp F4            &kp F5        &kp F6  &kp F7           &kp F8          &kp F9        &kp F10          &kp F11
-&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
-&trans      &kp END   &kp PAGE_DOWN  &trans          &trans            &trans        &trans  &trans           &trans          &trans        &trans           &trans
-                                     &trans          &trans            &trans        &trans  &kp PRINTSCREEN
-                                                     &trans            &trans        &trans
+&trans      &trans    &trans         &trans          &trans            &trans         &trans  &trans           &trans          &trans        &trans           &trans
+&kp ESCAPE  &kt F1    &kp F2         &kp F3          &kp F4            &kp F5         &kp F6  &kp F7           &kp F8          &kp F9        &kp F10          &kp F11
+&trans      &kp HOME  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT     &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F12
+&trans      &kp END   &kp PAGE_DOWN  &kp K_UNDO      &kp K_COPY        &kp K_PASTE    &trans  &trans           &trans          &trans        &trans           &trans
+                                     &trans          &trans            &trans         &trans  &kp PRINTSCREEN
+                                                     &trans            &trans         &trans
             >;
 
             label = "NAV-FUN";
