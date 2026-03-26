@@ -18,7 +18,7 @@ layers:
   - ','
   - .
   - P
-  - Y
+  - '&test_dance'
   - F
   - G
   - C
@@ -154,9 +154,9 @@ layers:
   - {t: ▽, type: trans}
   - END
   - PAGE DOWN
-  - UNDO
-  - COPY
-  - PASTE
+  - Gui+ Z
+  - Gui+ C
+  - Gui+ P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -726,6 +726,6 @@ combos:
 - p: [31, 32]
   k: '}'
 - p: [15, 16]
-  k: '?'
+  k: {t: ▽, type: trans}
 - p: [27, 28]
-  k: '{'
+  k: {t: ▽, type: trans}
