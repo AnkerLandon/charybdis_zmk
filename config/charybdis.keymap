@@ -207,6 +207,20 @@
             #binding-cells = <0>;
             bindings = <&kt D>, <&kt RIGHT_BRACKET>, <&kt RS(RIGHT_BRACKET)>;
         };
+
+        td4: td4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD4";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+        };
+
+        td3: td3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD3";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp BACKSLASH>, <&kp PIPE>;
+        };
     };
 
     keymap {
@@ -214,9 +228,9 @@
 
         default_win_layer {
             bindings = <
-&kp ESCAPE                        &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6                &kp N7              &kp N8            &kp N9            &kp N0                &kp BACKSPACE
-&kp TAB                           &kp APOS             &kp COMMA        &kp DOT          &kp P              &Y_slash          &F_slash              &kp G               &kp C             &kp R             &kp L                 &kp EQUAL
-&kp DELETE                        &hml LEFT_CONTROL A  &hml LEFT_ALT O  &hml LEFT_GUI E  &hml LEFT_SHIFT U  &I_brackets       &D_brackets           &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr RIGHT_ALT N  &hmr RIGHT_CONTROL S  &kp MINUS
+&hml ESCAPE GRAVE                 &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &kp N6                &kp N7              &kp N8            &kp N9            &kp N0                &kp BACKSPACE
+&kp TAB                           &kp APOS             &kp COMMA        &kp DOT          &kp P              &Y_slash          &td3                  &kp G               &kp C             &kp R             &kp L                 &kp EQUAL
+&kp DELETE                        &hml LEFT_CONTROL A  &hml LEFT_ALT O  &hml LEFT_GUI E  &hml LEFT_SHIFT U  &I_brackets       &td4                  &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr RIGHT_ALT N  &hmr RIGHT_CONTROL S  &kp MINUS
 &hml LEFT_SHIFT LEFT_PARENTHESIS  &lt 9 SEMI           &kp Q            &kp J            &kp K              &kp X             &kp B                 &kp M               &kp W             &kp V             &lt 9 Z               &hml RSHIFT RIGHT_PARENTHESIS
                                                                         &lt 1 TAB        &kp DELETE         &lt 2 LEFT_GUI    &hmr RA(RG(S)) RG(S)  &kp SPACE
                                                                                          &kp BACKSPACE      &lt 2 LEFT_GUI    &kp ENTER

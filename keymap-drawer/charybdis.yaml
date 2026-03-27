@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   QUERTZ:
-  - ESCAPE
+  - {t: '`', h: ESCAPE}
   - '1'
   - '2'
   - '3'
@@ -19,7 +19,7 @@ layers:
   - .
   - P
   - '&Y_slash'
-  - '&F_slash'
+  - '&td3'
   - G
   - C
   - R
@@ -31,7 +31,7 @@ layers:
   - {t: E, h: LEFT GUI}
   - {t: U, h: LEFT SHIFT}
   - '&I_brackets'
-  - '&D_brackets'
+  - '&td4'
   - {t: H, h: RIGHT SHIFT}
   - {t: T, h: RIGHT GUI}
   - {t: N, h: RIGHT ALT}
