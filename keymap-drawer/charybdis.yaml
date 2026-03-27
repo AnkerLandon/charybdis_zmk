@@ -18,8 +18,8 @@ layers:
   - ','
   - .
   - P
-  - '&test_dance'
-  - F
+  - '&Y_slash'
+  - '&F_slash'
   - G
   - C
   - R
@@ -30,8 +30,8 @@ layers:
   - {t: O, h: LEFT ALT}
   - {t: E, h: LEFT GUI}
   - {t: U, h: LEFT SHIFT}
-  - I
-  - D
+  - '&I_brackets'
+  - '&D_brackets'
   - {t: H, h: RIGHT SHIFT}
   - {t: T, h: RIGHT GUI}
   - {t: N, h: RIGHT ALT}
@@ -713,19 +713,3 @@ combos:
   k: M CLK
 - p: [24, 25]
   k: CAPSLOCK
-- p: [18, 19]
-  k: \
-- p: [30, 31]
-  k: ']'
-- p: [16, 17]
-  k: /
-- p: [28, 29]
-  k: '['
-- p: [19, 20]
-  k: '|'
-- p: [31, 32]
-  k: '}'
-- p: [15, 16]
-  k: {t: ▽, type: trans}
-- p: [27, 28]
-  k: {t: ▽, type: trans}
