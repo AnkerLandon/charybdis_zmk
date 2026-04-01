@@ -4,7 +4,9 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: badjeff
       url-base: https://github.com/badjeff
-  projects:
+    - name: carrefinho                          
+      url-base: https://github.com/carrefinho   
+  projects: 
     - name: zmk
       remote: zmkfirmware
       revision: feat/pointers-with-input-processors
@@ -18,5 +20,8 @@ manifest:
     - name: zmk-input-behavior-listener
       remote: badjeff
       revision: main
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: feat/new-status-screens          
   self:
     path: config

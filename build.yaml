@@ -56,10 +56,10 @@ include:
     format: dongle
     artifact-name: charybdis_qwerty_dongle_right
   - board: seeeduino_xiao_ble
-    shield: charybdis_dongle
+    shield: charybdis_dongle prospector_adapter
     keymap: qwerty
     format: dongle
-    artifact-name: charybdis_qwerty_dongle
+    artifact-name: charybdis_qwerty_dongle_display
 
   # # Colemak DH Dongle
   # - board: nice_nano_v2
@@ -84,6 +84,7 @@ include:
     format: reset
     artifact-name: firmware_reset_nano_v2
   - board: seeeduino_xiao_ble
+  #xiao_ble//zmk
     shield: settings_reset
     format: reset
     artifact-name: firmware_reset_xiao_ble
